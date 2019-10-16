@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jkokko <jkokko@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jkokko <jkokko@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 14:23:40 by jkokko            #+#    #+#             */
-/*   Updated: 2019/10/14 14:35:17 by jkokko           ###   ########.fr       */
+/*   Updated: 2019/10/16 09:33:44 by jkokko           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int		ft_iterative_factorial(int nb)
 {
@@ -27,10 +25,4 @@ int		ft_iterative_factorial(int nb)
 		i++;
 	}
 	return (res);
-}
-
-int		main(void)
-{
-	printf("%d\n", ft_iterative_factorial(-2));
-	return (0);
 }

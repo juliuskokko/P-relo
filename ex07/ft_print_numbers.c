@@ -3,21 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jkokko <jkokko@student.42.fr>              +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 13:42:30 by jkokko            #+#    #+#             */
-/*   Updated: 2019/10/14 14:09:29 by jkokko           ###   ########.fr       */
+/*   Updated: 2019/10/16 09:06:39 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
-void ft_print_numbers(void)
+void	ft_print_numbers(void)
 {
 	char n;
 
@@ -27,10 +24,4 @@ void ft_print_numbers(void)
 		ft_putchar(n);
 		n++;
 	}
-}
-
-int main(void)
-{
-	ft_print_numbers();
-	return (0);
 }

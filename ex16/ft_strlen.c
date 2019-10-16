@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jkokko <jkokko@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jkokko <jkokko@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 14:56:33 by jkokko            #+#    #+#             */
-/*   Updated: 2019/10/14 16:06:40 by jkokko           ###   ########.fr       */
+/*   Updated: 2019/10/16 09:41:06 by jkokko           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int		ft_strlen(char *str)
 {
@@ -22,10 +20,4 @@ int		ft_strlen(char *str)
 		i++;
 	}
 	return (i);
-}
-
-int		main(void)
-{
-	printf("%d\n", ft_strlen("kissa"));
-	return (0);
 }

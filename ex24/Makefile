@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jkokko <jkokko@student.42.fr>              +#+  +:+       +#+         #
+#    By: jkokko <jkokko@student.hive.fi>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/15 12:13:24 by jkokko            #+#    #+#              #
-#    Updated: 2019/10/15 12:50:44 by jkokko           ###   ########.fr        #
+#    Updated: 2019/10/16 09:59:45 by jkokko           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,7 @@ all: $(NAME)
 $(NAME):
 	gcc $(FLAGS) -c $(SOURCE) -I ./includes/
 	ar rc $(NAME) $(OBJECTS)
+	ranlib $(NAME)
 
 clean:
 	/bin/rm -f $(OBJECTS)

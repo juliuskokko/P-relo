@@ -3,22 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jkokko <jkokko@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jkokko <jkokko@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 14:42:08 by jkokko            #+#    #+#             */
-/*   Updated: 2019/10/14 14:52:09 by jkokko           ###   ########.fr       */
+/*   Updated: 2019/10/16 09:40:09 by jkokko           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
 int		ft_sqrt(int nb)
 {
+	int sqrt;
 
-}
-
-int		main(void)
-{
-	printf("%d\n", ft_sqrt(9));
+	sqrt = 1;
+	while ((sqrt * sqrt) <= nb)
+	{
+		if (sqrt * sqrt == nb)
+			return (sqrt);
+		sqrt++;
+	}
 	return (0);
 }

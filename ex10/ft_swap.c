@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jkokko <jkokko@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jkokko <jkokko@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 14:16:44 by jkokko            #+#    #+#             */
-/*   Updated: 2019/10/14 14:19:25 by jkokko           ###   ########.fr       */
+/*   Updated: 2019/10/16 09:31:38 by jkokko           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 void	ft_swap(int *a, int *b)
 {
@@ -19,14 +17,4 @@ void	ft_swap(int *a, int *b)
 	c = *a;
 	*a = *b;
 	*b = c;
-}
-
-int		main(void)
-{
-	int a = 1;
-	int b = 10;
-
-	ft_swap(&a, &b);
-	printf("a: %d b: %d", a, b);
-	return (0);
 }

@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jkokko <jkokko@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jkokko <jkokko@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 14:35:24 by jkokko            #+#    #+#             */
-/*   Updated: 2019/10/14 14:41:21 by jkokko           ###   ########.fr       */
+/*   Updated: 2019/10/16 09:39:37 by jkokko           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int		ft_recursive_factorial(int nb)
 {
@@ -22,10 +20,4 @@ int		ft_recursive_factorial(int nb)
 
 	res = nb * ft_recursive_factorial(nb - 1);
 	return (res);
-}
-
-int		main(void)
-{
-	printf("%d\n", ft_recursive_factorial(-1));
-	return (0);
 }

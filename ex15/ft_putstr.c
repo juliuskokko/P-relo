@@ -3,19 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jkokko <jkokko@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jkokko <jkokko@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 14:52:17 by jkokko            #+#    #+#             */
-/*   Updated: 2019/10/14 14:56:19 by jkokko           ###   ########.fr       */
+/*   Updated: 2019/10/16 09:40:41 by jkokko           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {
@@ -28,9 +23,4 @@ void	ft_putstr(char *str)
 		i++;
 	}
 	ft_putchar('\n');
-}
-
-int		main(void)
-{
-	ft_putstr("kissa");
 }

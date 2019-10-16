@@ -3,14 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sort_params.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jkokko <jkokko@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jkokko <jkokko@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 16:25:06 by jkokko            #+#    #+#             */
-/*   Updated: 2019/10/15 10:49:47 by jkokko           ###   ########.fr       */
+/*   Updated: 2019/10/16 10:00:14 by jkokko           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+void	ft_putchar(char c);
+
+void	ft_putstr(char *str)
+{
+	int i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		ft_putchar(str[i]);
+		i++;
+	}
+	ft_putchar('\n');
+}
 
 int		ft_strcmp(char *s1, char *s2)
 {
@@ -20,34 +33,6 @@ int		ft_strcmp(char *s1, char *s2)
 	while (s1[i] && s2[i] && s1[i] == s2[i])
 		i++;
 	return (s1[i] - s2[i]);
-}
-
-int		ft_strlen(char *str)
-{
-	int i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
-
-int		ft_lstr(char **argv)
-{
-	int res;
-	int i;
-
-	i = 1;
-	res = 0;
-	while (argv[i] != '\0')
-	{
-		if (ft_strlen(argv[i]) > res)
-			res = ft_strlen(argv[i]);
-		i++;
-	}
-	return (res);
 }
 
 void	ft_sort(int argc, char **argv, char *tmp)
@@ -75,14 +60,14 @@ void	ft_sort(int argc, char **argv, char *tmp)
 
 int		main(int argc, char **argv)
 {
-	char tmp[ft_lstr(argv)];
+	char *tmp;
 	int i;
 
 	i = 1;
 	ft_sort(argc, argv, tmp);
 	while (i < argc)
 	{
-		printf("%s\n", argv[i]);
+		ft_putstr(argv[i]);
 		i++;
 	}
 	return (0);
