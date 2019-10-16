@@ -6,7 +6,7 @@
 /*   By: jkokko <jkokko@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/15 10:50:11 by jkokko            #+#    #+#             */
-/*   Updated: 2019/10/16 09:50:19 by jkokko           ###   ########.fr       */
+/*   Updated: 2019/10/16 10:41:16 by jkokko           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,8 @@ char	*ft_strdup(char *src)
 	char *cpy;
 
 	i = 0;
-	cpy = (char *)malloc(sizeof(char) * (ft_strlen(src) + 1));
+	if (!(cpy = (char *)malloc(sizeof(*cpy) * (ft_strlen(src) + 1))))
+		return (NULL);
 	while (src[i] != '\0')
 	{
 		cpy[i] = src[i];

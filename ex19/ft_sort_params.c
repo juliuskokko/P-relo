@@ -6,7 +6,7 @@
 /*   By: jkokko <jkokko@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 16:25:06 by jkokko            #+#    #+#             */
-/*   Updated: 2019/10/16 10:00:14 by jkokko           ###   ########.fr       */
+/*   Updated: 2019/10/16 10:35:37 by jkokko           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ void	ft_putstr(char *str)
 		ft_putchar(str[i]);
 		i++;
 	}
-	ft_putchar('\n');
 }
 
 int		ft_strcmp(char *s1, char *s2)
@@ -64,11 +63,15 @@ int		main(int argc, char **argv)
 	int i;
 
 	i = 1;
-	ft_sort(argc, argv, tmp);
-	while (i < argc)
+	if (argc > 1)
 	{
-		ft_putstr(argv[i]);
-		i++;
+		ft_sort(argc, argv, tmp);
+		while (i < argc)
+		{
+			ft_putstr(argv[i]);
+			ft_putchar('\n');
+			i++;
+		}
 	}
 	return (0);
 }

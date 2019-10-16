@@ -6,8 +6,13 @@
 /*   By: jkokko <jkokko@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/15 11:19:14 by jkokko            #+#    #+#             */
-/*   Updated: 2019/10/16 09:51:24 by jkokko           ###   ########.fr       */
+/*   Updated: 2019/10/16 10:45:06 by jkokko           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#define ABS(Value) (Value < 0 ? -(Value) : Value)
+#ifndef FT_ABS_H
+# define FT_ABS_H
+
+# define ABS(Value) (Value < 0 ? -(Value) : Value)
+
+#endif

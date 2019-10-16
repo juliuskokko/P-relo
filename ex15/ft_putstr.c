@@ -6,7 +6,7 @@
 /*   By: jkokko <jkokko@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 14:52:17 by jkokko            #+#    #+#             */
-/*   Updated: 2019/10/16 09:40:41 by jkokko           ###   ########.fr       */
+/*   Updated: 2019/10/16 10:20:45 by jkokko           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,4 @@ void	ft_putstr(char *str)
 		ft_putchar(str[i]);
 		i++;
 	}
-	ft_putchar('\n');
 }

@@ -6,7 +6,7 @@
 /*   By: jkokko <jkokko@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/15 10:59:01 by jkokko            #+#    #+#             */
-/*   Updated: 2019/10/16 09:51:17 by jkokko           ###   ########.fr       */
+/*   Updated: 2019/10/16 10:42:39 by jkokko           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ int		*ft_range(int min, int max)
 	i = 0;
 	if (max <= min)
 		return (NULL);
-	array = (int *)malloc(sizeof(int) * ((max - min)));
+	if (!(array = (int *)malloc(sizeof(*array) * ((max - min)))))
+		return (NULL);
 	while (min < max)
 	{
 		array[i] = min;

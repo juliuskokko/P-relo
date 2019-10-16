@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jkokko <jkokko@student.42.fr>              +#+  +:+       +#+         #
+#    By: jkokko <jkokko@student.hive.fi>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/08/29 10:23:41 by jkokko            #+#    #+#              #
-#    Updated: 2019/08/29 10:39:06 by jkokko           ###   ########.fr        #
+#    Updated: 2019/10/16 10:55:26 by jkokko           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,3 +27,5 @@ clean:
 
 fclean: clean
 	/bin/rm -f $(NAME)
+
+.PHONY: clean fclean all re

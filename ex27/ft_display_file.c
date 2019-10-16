@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_display_file.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jkokko <jkokko@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jkokko <jkokko@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/15 14:11:49 by jkokko            #+#    #+#             */
-/*   Updated: 2019/10/15 14:13:30 by jkokko           ###   ########.fr       */
+/*   Updated: 2019/10/16 10:53:14 by jkokko           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,9 @@ int		ft_check_arg(int ac)
 	if (ac == 2)
 		return (1);
 	else if (ac == 1)
-		write(1, "File name missing.\n", 19);
+		write(2, "File name missing.\n", 19);
 	else if (ac > 2)
-		write(1, "Too many arguments.\n", 20);
+		write(2, "Too many arguments.\n", 20);
 	return (0);
 }
 
