@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_foreach.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jkokko <jkokko@student.hive.fi>            +#+  +:+       +#+        */
+/*   By: jkokko <jkokko@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/15 12:51:14 by jkokko            #+#    #+#             */
-/*   Updated: 2019/10/16 09:53:44 by jkokko           ###   ########.fr       */
+/*   Updated: 2019/10/16 14:19:57 by jkokko           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_foreach(int *tab, int length, void(*f)(int))
+void	ft_foreach(int *tab, int length, void (*f)(int))
 {
 	int i;
 

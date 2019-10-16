@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sort_params.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jkokko <jkokko@student.hive.fi>            +#+  +:+       +#+        */
+/*   By: jkokko <jkokko@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 16:25:06 by jkokko            #+#    #+#             */
-/*   Updated: 2019/10/16 10:35:37 by jkokko           ###   ########.fr       */
+/*   Updated: 2019/10/16 14:59:55 by jkokko           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,9 +59,10 @@ void	ft_sort(int argc, char **argv, char *tmp)
 
 int		main(int argc, char **argv)
 {
-	char *tmp;
-	int i;
+	char	*tmp;
+	int		i;
 
+	tmp = "testtesttesttest";
 	i = 1;
 	if (argc > 1)
 	{
